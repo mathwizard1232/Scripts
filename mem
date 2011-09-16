@@ -1,0 +1,21 @@
+#/bin/bash
+#
+# wrapper for memory which hides starting mongo. This is dangerous as mongo must be stopped at the end. Thus, we kill mongo to flush writes.
+
+#this command is highly specific to my arch install. On any other computer, this may be generally useless gibberish. This is designed to circumvent problems when offline.
+ifconfig eth0 0.0.0.0
+
+#now start mongo
+m0 >/dev/null &
+
+#current memory bin a little unstable, fails if mongo not instantly available. TODO Fix later.
+sleep 2
+
+# now start memory
+memory
+
+# now stop mongo
+pkill mongo
+
+#Everything should be square now. Knock on wood.
+echo 'Have a nice day. Enjoy your memories.'

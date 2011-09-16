@@ -1,0 +1,6 @@
+#/bin/bash
+#
+# snap - take a screenshot in five seconds
+
+sleep 5
+import -window root screenshot.jpg

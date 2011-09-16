@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ifconfig wlan0 down
+iwconfig wlan0 mode managed
+iwconfig wlan0 essid $ESSID
+ifconfig wlan0 up

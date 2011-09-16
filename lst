@@ -1,0 +1,5 @@
+#/bin/sh
+#
+# lst - list with a lsp
+
+list $1

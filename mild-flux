@@ -1,0 +1,6 @@
+#/bin/bash
+#
+# mild-flux - gradual fluctuation in sound to alert the user to something
+
+steps-down 5 15
+steps-up 5 15

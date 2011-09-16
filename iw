@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $ESSID |xargs iwconfig wlan0 essid
+i

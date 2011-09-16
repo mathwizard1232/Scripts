@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# mv-img move the images in the current directory to the given location
+
+mv  *.jpg $1 &>/dev/null
+mv *.gif $1 &>/dev/null
+mv *.png $1 &>/dev/null
+rm Thumbs.db &>/dev/null

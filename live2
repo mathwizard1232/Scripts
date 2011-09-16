@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# live
+#
+# live2- implementation of return 1 with internet, 0 without
+
+if ping -c 1 google.com |grep "time="
+  then exit 1
+fi
+exit 0

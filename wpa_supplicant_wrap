@@ -1,0 +1,12 @@
+#/bin/bash
+#experimental coding
+#echo "warning, experimental, convenience software: " $0
+#echo "Known bug: only 4 parameters passed through."
+#echo #fuck bash or fuck me
+
+rm /var/run/wpa_supplicant/wlan0
+#echo $1 $2 $3 $4
+#wpa_supplicant $1 $2 $3 $4
+#hardcoded version for copypaste testing: (uncomment to use)
+#rm /var/run/wpa_supplicant/wlan0
+wpa_supplicant -Dwext -i wlan0 -c/etc/wpa_supplicant.conf -B

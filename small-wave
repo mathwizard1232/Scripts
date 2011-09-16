@@ -1,0 +1,10 @@
+#/bin/bash
+#
+# wave - alternate loud and soft from current volume
+
+steps-down 10 3
+steps-up 10 3
+
+if [ $1 -gt 0 ]; then
+   wave $(( $1 - 1 ))
+fi

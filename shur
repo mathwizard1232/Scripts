@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# shur
+#
+# modification of shu to restart
+
+shutdown -r now

@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# clean
+#
+# remove any files in the local directory ending with ~. These should be temporary files, unneeded unless there was a known powerloss.
+# "" starting and ending with #. ""
+rm -f ./*~
+rm -f ./#*#

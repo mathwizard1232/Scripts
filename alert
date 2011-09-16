@@ -1,0 +1,9 @@
+#/bin/bash
+#
+# alert - Used to fluctuate the volume after the given number of seconds
+
+sleep $1
+mild-flux
+#med-flux
+#mega-flux
+mute

@@ -1,0 +1,4 @@
+#/bin/bash
+
+unmute
+amixer set 'PCM' 40%

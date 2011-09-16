@@ -1,0 +1,13 @@
+#/bin/bash
+#
+# soft-wave
+#
+# as wave, but softly and gently
+
+soft
+steps-down 10 4
+steps-up 10 4
+
+if [ $1 -gt 0 ]; then
+   soft-wave $(( $1 - 1 ))
+fi

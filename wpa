@@ -1,0 +1,6 @@
+#/bin/bash
+
+#wpa_supplicant -B -Dwext -iwlan0 -c/etc/wpa_supplicant.conf
+#sleep 4
+wpa_supplicant_testing
+dhcpcd wlan0

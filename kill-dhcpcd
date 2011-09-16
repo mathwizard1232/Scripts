@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat /var/run/dhcpcd.pid |xargs kill>/dev/null
+cat /var/run/dhcpcd-wlan0.pid |xargs kill>/dev/null
+#rm /var/run/

@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# api
+#
+# auditory ping
+#
+# pi + sound
+#
+# If currently disconnected, beeps when a connection is found.
+# If currently connected, beeps when a connection is lost.
+
+live2
+STATE=$?
+
+while true; do
+      live2 >/dev/null
+      NEWSTATE=$?
+      if [ $STATE -ne $NEWSTATE ]; then
+         if [ $STATE -eq 1 ]; then
+           beep -r 3 #connection lost
+         else
+           beep -r 2 -f 700 #connection gained
+         fi
+      fi
+      STATE=$NEWSTATE
+done

@@ -1,0 +1,14 @@
+#/bin/bash
+
+miniblast
+
+if [ $1 -eq 0 ]; then
+   mute
+   sleep 1
+   annoy 1
+else
+   unmute
+   sleep 1
+   annoy 0
+fi
+

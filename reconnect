@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# reconnect - reconnect to ESSID
+
+iwconfig wlan0 essid $ESSID
+dhcpcd wlan0

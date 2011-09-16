@@ -1,0 +1,4 @@
+#/bin/bash
+
+amixer set Beep 40%
+amixer sset Beep unmute

@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# list - attempt to list a shell script argument
+
+if [ $# = 1 ]; then
+   which $1 | xargs cat
+else
+	echo "list takes one argument"
+	exit 1
+fi

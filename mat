@@ -1,0 +1,4 @@
+#/bin/bash
+
+mount /dev/sda5 /mnt/matlab
+matlab &

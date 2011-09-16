@@ -1,0 +1,13 @@
+#!/bin/bash
+
+scriptpath=$0
+case $scriptpath in
+  ./*) path=`pwd` ;;
+  * )  path=`dirname $scriptpath`
+esac
+
+ping -c 1 google.com >$path/data/live 2>$path/data/live2
+if grep "time=" $path/data/live>/dev/null
+  then exit 1
+fi
+exit 0

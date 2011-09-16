@@ -1,0 +1,7 @@
+#/bin/bash
+#
+# umn - connect to the umn network
+
+export ESSID=UofM
+#sus
+fr

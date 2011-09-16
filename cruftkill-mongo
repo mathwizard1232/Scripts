@@ -1,0 +1,9 @@
+#/bin/bash
+#
+# cruftkill- series of programs to kill various types of cruft
+#
+# cruftkill-mongo
+#
+# kills the crufty local databases in mongodb
+
+rm /data/db/local*

@@ -1,0 +1,7 @@
+#/bin/sh
+#
+# go2
+#
+# go to the second server
+
+ssh diadochoi@rutledge.prgmr.com

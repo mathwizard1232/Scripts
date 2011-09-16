@@ -1,0 +1,10 @@
+#/bin/bash
+
+min=$1
+typeset -i sec
+typeset -i min
+sec=$min*60
+echo $sec
+echo $1
+sleep $sec
+mild-annoy

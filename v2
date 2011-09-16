@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# v2 - shortcut for valgrind with 2 arguments
+
+valgrind --leak-check=full $1 $2

@@ -1,0 +1,6 @@
+#/bin/bash
+#
+# Make whatever changes are in the local directory go to the remote
+
+git commit -a
+git push

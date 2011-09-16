@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# sustain - If the internet connection is currently down, then fix it and continue to scan for any lapses in connectivity. If the internet is already up, then exit.
+
+sustain &
+soft
+sleep 30
+pi
+

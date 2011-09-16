@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# sustain - If the internet connection is currently down, then fix it and continue to scan for any lapses in connectivity. If the internet is already up, then exit.
+
+live
+if [ 0 -eq $? ]
+  then while true
+  do
+    sleep 10
+    live
+    if [ 0 -eq $? ]; then 
+        sleep 2
+        live
+        if [ 0 -eq $? ]; then
+            force-reconnect
+            echo 'reconnected'
+        else
+            sleep 3
+        fi
+    else
+    sleep 3
+    fi
+  done
+fi

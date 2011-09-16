@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# output - produce some output to stdout
+
+echo 'This is going\nTo stdout?'

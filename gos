@@ -1,0 +1,5 @@
+#/bin/bash
+#
+# go - connect to my primary remote server
+
+sftp goss0063@shaungosse.com

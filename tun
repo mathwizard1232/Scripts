@@ -1,0 +1,5 @@
+#/bin/bash
+#
+# tun - open a secure tunnel to waylaid which forwards the local master mongo database to the remote port 10000
+
+ssh -nNT -i ~/id_rsa -R 10000:127.0.0.1:27017 goss0063@waylaid.org

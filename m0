@@ -1,0 +1,4 @@
+#/bin/bash
+#
+# m is memory, which had been mongo. m0 links to ~//mongo to simulate logical naming
+~/scripts/mongo

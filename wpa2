@@ -1,0 +1,12 @@
+#/bin/bash
+#
+# wpa2
+# 
+# This is intended to connect to an unsecure, home network.
+# Do not let the WEP fool you, this is simply a slower way of transmitting
+# cleartext. Fuck teh m0t3rfu1k1n5 p0l1 and such, but it must be implemented on
+# this side, since the other side insists.
+
+wpa_supplicant -B -Dwext -iwlan0 -c/etc/wpa_supplicant.conf
+sleep 4
+dhcpcd wlan0

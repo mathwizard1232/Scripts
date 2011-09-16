@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# scripts
+#
+# Adds the scripts path to the PATH so the scripts can be scripted.
+
+export PATH=$PATH:/bin/bash

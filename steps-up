@@ -1,0 +1,8 @@
+#/bin/bash
+
+if [ $1 -gt 0 ]; then
+   amixer set 'PCM' 2dB+
+   sleep $2
+   let remaining=$1-1
+   steps-up $remaining $2
+fi

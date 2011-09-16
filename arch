@@ -1,0 +1,17 @@
+#/bin/sh
+#
+# arch
+#
+# install the arch linux operating system
+
+wget http://www.archlinux.org/packages/core/x86_64/pacman/download/
+wget http://www.archlinux.org/packages/core/any/pacman-mirrorlist/download/
+echo 'now setup pacman.conf mirrorlist location'
+#arch2
+#
+# export PATH=/mnt/pacman/usr/bin:$PATH
+# export LD_LIBRARY_PATH=/mnt/pacman/usr/lib:$LD_LIBRARY_PATH
+# alias pacman="pacman --config /mnt/pacman/etc/pacman.con"
+# 
+#
+# wget ld-linux-x86-64.so.2

@@ -1,0 +1,8 @@
+#/bin/bash
+#
+# palis - from pa^lir (fr)
+# blast sound, then fade away entirely
+
+miniblast
+steps-down 20 60
+shu

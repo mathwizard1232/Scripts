@@ -1,0 +1,14 @@
+#/bin/bash
+
+mild-blast
+
+if [ $1 -eq 0 ]; then
+   mute
+   sleep 1
+   mild-annoy 1
+else
+   unmute
+   sleep 1
+   mild-annoy 0
+fi
+

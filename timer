@@ -1,0 +1,5 @@
+#/bin/bash
+
+sec=$(( 60 * $1))
+sleep $sec
+annoy

@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# beep_on_connect
+#
+# Attempts to reach the Internet. Beeps three times when successful
+
+if [ live ]; then
+beep -r 3
+else
+fr
+beep -r 3
+fi

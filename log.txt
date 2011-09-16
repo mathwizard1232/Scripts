@@ -1,0 +1,11 @@
+Logging in as user:
+1
+10
+logging in as:
+Starting to load categories.
+Categories loaded.
+Shaun
+done
+Reviewing card.
+4d64052e8cdc29ecb5b8f5a4
+ 

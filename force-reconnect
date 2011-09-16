@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while [ -f /var/run/dhcpcd-wlan0.pid ]
+do
+cat /var/run/dhcpcd-wlan0.pid |xargs kill>/dev/null
+done
+reconnect

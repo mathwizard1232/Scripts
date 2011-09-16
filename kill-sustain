@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkill sustain
+kill-dhcpcd

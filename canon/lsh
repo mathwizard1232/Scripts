@@ -1,0 +1,7 @@
+#/bin/sh
+#
+# lsh - a script to display the hidden files only in a local directory
+
+ls - A | grep "^\."
+
+# credit to : http://www.unix.com/shell-programming-scripting/43111-how-display-only-hidden-files.html

@@ -1,0 +1,7 @@
+#/bin/bash
+#
+# 1/7/11
+# testing WEP, trying to finally break back in.
+
+rm /var/run/wpa_supplicant/wlan0
+wpa_supplicant -B -Dwext -iwlan0 -c/etc/wpa_supplicant.conf
