@@ -1,6 +1,6 @@
 #/bin/bash
-if [ $1 -gt 0 ]; then
-   if [ $1 -gt 1 ]; then
-      $1 2>&1 | tee $2
+if [ $# -gt 0 ]; then
+   if [ $# -gt 1 ]; then
+      sudo $1 2>&1 | tee $2
    fi
 fi
